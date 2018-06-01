@@ -11,6 +11,8 @@ SRC_URI[sha256sum] = "c36c938a872e5ff494938b33b14aaa156cb439ec67548fcab3535bb78b
 
 S = "${WORKDIR}/${SRCNAME}-${PV}"
 
+DEPENDS = "libyaml"
+
 RDEPENDS_${PN} = "${PYTHON_PN}-datetime"
 
 inherit setuptools3
