@@ -1,3 +1,13 @@
+## Introduction
+
+This repository is a LGSVL's fork of the [meta-ros](https://github.com/bmwcarit/meta-ros) layer for ROS2. It builds on an existing pull request for ROS2 support, adds dependencies and the ability to build ROS2 python packages, and updates to the Ardent Apalone release of ROS2. 
+
+This repository is under development and there are plans to automate the generation of this meta layer with the latest stable ROS2 release.
+
+------
+
+
+
 This is a layer to provide ROS Indigo Igloo in an OpenEmbedded Linux system.
 It provides a stable cross-compilation build system for many common ROS packages. 
 Currently, this layer is still under continuous development.
@@ -81,7 +91,7 @@ resolved in the past.
   subdirectory: meta-python  
   branch: master  
   revision: HEAD  
-  
+
   **meta-multimedia** (since fe44ac167a2a76531af3519f3889fce92024567b@meta-openembedded)  
   URI: git://git.openembedded.org/meta-openembedded  
   subdirectory: meta-multimedia  
@@ -182,9 +192,9 @@ resolved in the past.
   Then for example, you start this system in the qemu virtual machine with
 
     runqemu <MACHINE> core-image-ros-roscore
-  
+
   On the Linux system, ensure that the own host's name in resolved by adding
-  
+
     127.0.0.1	<HOSTNAME>.localdomain		<HOSTNAME>
 
   to the /etc/hosts file, and set up the environment with
@@ -219,11 +229,11 @@ resolved in the past.
 
 
 ## CROSS-COMPILING ALL ROS PACKAGES IN meta-ros
-  
+
   The meta-ros layers only includes a subset of the officially released ROS
   packages, available from packages.ros.org. The here provided ROS packages
   are mainly driven by the current users' needs.
-  
+
   For ROS packages that depend on cv-bridge, the commercial license flag
   must be whitelisted, as cv-bridge depends on opencv, and opencv by
   default depends on libav that has special terms and conditions when used
