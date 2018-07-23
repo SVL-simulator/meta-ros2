@@ -2,6 +2,7 @@ DESCRIPTION = "YAML parser and emitter for Python"
 SECTION = "devel/python"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=6015f088759b10e0bc2bf64898d4ae17"
+DEPENDS = "libyaml ${PYTHON_PN}-cython-native ${PYTHON_PN}"
 
 SRCNAME = "PyYAML"
 
