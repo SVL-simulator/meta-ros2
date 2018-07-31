@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository is a LGSVL's fork of the [meta-ros](https://github.com/bmwcarit/meta-ros) layer for ROS2. It builds on an existing pull request for ROS2 support, adds dependencies and the ability to build ROS2 python packages, and updates to the Ardent Apalone release of ROS2. 
+This repository is LGSVL's fork of the [meta-ros](https://github.com/bmwcarit/meta-ros) layer for ROS2. It builds on an existing pull request for ROS2 support, adds dependencies and the ability to build ROS2 python packages, and updates to the Ardent Apalone release of ROS2. 
 
 This repository is under development and there are plans to automate the generation of this meta layer with the latest stable ROS2 release.
 
