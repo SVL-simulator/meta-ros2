@@ -7,22 +7,15 @@ The build system adds `include` as a system headers folder, but in combination
 with having --sysroot option set for gcc makes gcc ignore the folder.
 
 Upstream-Status: Inappropriate [the line is legit, but breaks in Yocto]
----
- src/cpp/CMakeLists.txt | 1 -
- 1 file changed, 1 deletion(-)
-
 diff --git a/src/cpp/CMakeLists.txt b/src/cpp/CMakeLists.txt
-index 19029ef..119ce5e 100644
+index d9cdd9a..f9e6038 100644
 --- a/src/cpp/CMakeLists.txt
 +++ b/src/cpp/CMakeLists.txt
 @@ -83,7 +83,6 @@ else()
      # Define public headers
      target_include_directories(${PROJECT_NAME} PUBLIC
-         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include> $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include/${PROJECT_NAME}>
+         $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include> $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
 -        $<INSTALL_INTERFACE:include>
          )
  endif()
  
--- 
-2.9.3
-
