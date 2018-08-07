@@ -1,6 +1,6 @@
 HOMEPAGE = "https://github.com/ros2/rosidl_typesupport"
 
-SRCREV = "aa94c5724d05bd264a11f2d9aa0383b2e8b87001"
+SRCREV = "45f5a0ad4d9eaa5fc9303be2633a1e306b84026f"
 SRC_URI = "git://github.com/ros2/rosidl_typesupport.git;protocol=git;"
 
 inherit ament

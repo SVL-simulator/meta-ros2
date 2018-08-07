@@ -1,4 +1,4 @@
 HOMEPAGE = "https://github.com/ament/ament_index"
 
-SRCREV = "1df2aef4d7f1271d80082cc01aa08e13bfc58fce"
+SRCREV = "2ae14036e2c4f9db6fce022a47e300f71c47ea64"
 SRC_URI = "git://github.com/ament/ament_index.git;protocol=git;"

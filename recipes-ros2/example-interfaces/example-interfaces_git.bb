@@ -17,7 +17,7 @@ DEPENDS = " \
     python-cmake-module \
 "
 
-SRCREV = "b9f9477cd7f368e61f81d55c5021f4c70ad1fe12"
+SRCREV = "d15e330684c4c84223b0fd8538e19c448dedab27"
 SRC_URI = "git://github.com/ros2/example_interfaces.git;protocol=git;"
 
 inherit ament pythonpath-insane
