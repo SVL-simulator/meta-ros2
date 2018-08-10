@@ -1,0 +1,15 @@
+diff --git a/rcl_yaml_param_parser/CMakeLists.txt b/rcl_yaml_param_parser/CMakeLists.txt
+index 0e7b863..4cab9fa 100644
+--- a/rcl_yaml_param_parser/CMakeLists.txt
++++ b/rcl_yaml_param_parser/CMakeLists.txt
+@@ -5,8 +5,8 @@ project(rcl_yaml_param_parser)
+ find_package(ament_cmake_ros REQUIRED)
+ find_package(rcutils REQUIRED)
+ find_package(rcl REQUIRED)
+-find_package(libyaml_vendor REQUIRED)
+-find_package(yaml REQUIRED)
++find_package(PkgConfig REQUIRED)
++pkg_check_modules(yaml REQUIRED)
+ 
+ # Default to C++14
+ if(NOT CMAKE_CXX_STANDARD)

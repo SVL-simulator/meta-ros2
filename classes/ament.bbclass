@@ -16,6 +16,7 @@ DEPENDS_append = " \
     ament-cmake-target-dependencies-native \
     ament-cmake-include-directories-native \
     ament-cmake-test-native \
+    ament-cmake-ros-native \
 "
 
 ROS_BPN ?= "${@d.getVar('BPN', True).replace('-', '_')}"
@@ -46,6 +47,7 @@ FILES_${PN} = " \
     ${datadir}/${ROS_BPN}/resource/* \
     ${datadir}/${ROS_BPN}/msg/* \
     ${datadir}/${ROS_BPN}/srv/* \
+    ${datadir}/${ROS_BPN}/launch/* \
     ${datadir}/ament_index/* \
     ${libdir}/${PYTHON_DIR}/* \
     ${libdir}/${ROS_BPN}/* \

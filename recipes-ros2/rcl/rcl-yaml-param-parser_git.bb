@@ -4,15 +4,13 @@ LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://package.xml;beginline=10;endline=10;md5=12c26a18c7f493fdc7e8a93b16b7c04f"
 DEPENDS = " \
     ament-cmake-ros \
-    rmw \
+    libyaml \
     rcutils \
-    rcl-interfaces \
-    rmw-implementation \
-    rosidl-generator-c \
-"
-
-RDEPENDS_${PN} = " \
-    rosidl-default-runtime \
+    rcl \
 "
 
 include rcl.inc
+
+SRC_URI += " \
+    file://0001-drop-libyaml-vendor-dependency.patch;patchdir=.. \
+"
