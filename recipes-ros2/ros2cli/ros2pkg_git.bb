@@ -6,4 +6,6 @@ include ros2cli.inc
 
 inherit setuptools3
 
-RDEPENDS_${PN} += "ros2cli ament-index-python"
+DEPENDS = "ros2cli"
+
+RDEPENDS_${PN} += "ament-index-python python3-catkin-pkg python3-empy python3-setuptools python3-unixadmin"

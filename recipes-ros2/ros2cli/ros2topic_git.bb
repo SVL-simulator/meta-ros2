@@ -6,4 +6,6 @@ include ros2cli.inc
 
 inherit setuptools3
 
-RDEPENDS_${PN} += "ros2msg ${PYTHON_PN}-pyyaml"
+DEPENDS = "ros2cli"
+
+RDEPENDS_${PN} += "ros2msg ament-package ${PYTHON_PN}-pyyaml ${PYTHON_PN}-pyparsing"

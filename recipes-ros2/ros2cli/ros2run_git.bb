@@ -6,4 +6,6 @@ include ros2cli.inc
 
 inherit setuptools3
 
+DEPENDS = "ros2cli"
+
 RDEPENDS_${PN} += "ros2pkg"

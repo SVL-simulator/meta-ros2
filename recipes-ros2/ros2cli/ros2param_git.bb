@@ -6,6 +6,6 @@ include ros2cli.inc
 
 inherit setuptools3
 
-DEPENDS = "ros2cli"
+DEPENDS = "ros2cli rcl-interfaces rclpy"
 
-RDEPENDS_${PN} += "ament-index-python"
+RDEPENDS_${PN} += "ros2node"

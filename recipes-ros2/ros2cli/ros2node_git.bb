@@ -5,3 +5,5 @@ LIC_FILES_CHKSUM = "file://package.xml;beginline=10;endline=10;md5=12c26a18c7f49
 include ros2cli.inc
 
 inherit setuptools3
+
+DEPENDS = "ros2cli"
