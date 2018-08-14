@@ -10,6 +10,6 @@ S = "${WORKDIR}/git/launch"
 
 DEPENDS = "osrf-pycommon"
 
-RDEPENDS_${PN} += "${PYTHON_PN}-asyncio"
+RDEPENDS_${PN} += "${PYTHON_PN}-asyncio osrf-pycommon"
 
 inherit setuptools3
