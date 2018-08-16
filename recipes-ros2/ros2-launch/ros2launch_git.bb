@@ -7,4 +7,4 @@ S = "${WORKDIR}/git/ros2launch"
 
 DEPENDS = "ros2cli"
 
-RDEPENDS_${PN} += "ros2-launch ros2-launch-extentions ros2cli ros2pkg"
+RDEPENDS_${PN} += "ros2-launch ros2-launch-extensions ros2cli ros2pkg"

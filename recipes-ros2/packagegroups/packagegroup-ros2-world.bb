@@ -20,7 +20,7 @@ RDEPENDS_${PN} = "\
     ros2-actionlib-msgs \
     ros2-diagnostic-msgs \
     ros2-launch \
-    ros2-launch-extentions \
+    ros2-launch-extensions \
     ros2-nav-msgs \
     ros2-std-srvs \
     ros2-stereo-msgs \
