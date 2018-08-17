@@ -4,11 +4,11 @@ LIC_FILES_CHKSUM = "file://package.xml;beginline=8;endline=8;md5=12c26a18c7f493f
 
 include rosidl-defaults.inc
 
-RDEPENDS_${PN}-dev += " \
-    rosidl-generator-cpp-dev \
-    rosidl-generator-py-dev \
-    rosidl-typesupport-c-dev \
-    rosidl-typesupport-cpp-dev \
-    rosidl-typesupport-introspection-c-dev \
-    rosidl-typesupport-introspection-cpp-dev \
+DEPENDS = " \
+    rosidl-generator-cpp \
+    rosidl-generator-py \
+    rosidl-typesupport-c \
+    rosidl-typesupport-cpp \
+    rosidl-typesupport-introspection-c \
+    rosidl-typesupport-introspection-cpp \
 "

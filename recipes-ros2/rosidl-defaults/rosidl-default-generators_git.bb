@@ -4,8 +4,8 @@ LIC_FILES_CHKSUM = "file://package.xml;beginline=8;endline=8;md5=12c26a18c7f493f
 
 include rosidl-defaults.inc
 
-# TODO: add missing 'buildtool_export_depend' values from package.xml
-RDEPENDS_${PN}-dev += " \
+DEPENDS = " \
+    rosidl-cmake \
     rosidl-generator-c \
     rosidl-generator-cpp \
     rosidl-generator-py \
